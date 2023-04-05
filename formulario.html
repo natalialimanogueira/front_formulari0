@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+
+    <title>cadastro</title>
+  </head>
+  <body>
+    <div class="campo">
+      <h1 id="Título">Cadastro de DEVs</h1>
+      <p id="subtitulo"><strong>Complete suas informações</strong></p>
+    </div>
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome<strong></label>
+          <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome<strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required >
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="email"><Strong>Email<strong></label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="campo">
+        <label>Qual lado da aplicação você desenvolve?</label>
+
+        <label>
+          <input type="radio" name="devweb" volue="FrontEnd" checked />Front-End
+        </label>
+
+        <label>
+          <input type="radio" name="devweb" volue="BackEnd" />Back-End
+        </label>
+
+        <label>
+          <input type="radio" name="devweb" volue="FullStack" />Back-End
+        </label>
+      </div>
+      <div class="campo">
+        <label for="Senioridade"></label><Strong>Senioridade<strong></label>
+        <select id="Senioridade">
+          <option selected disobled value="">Selecone</option>
+          <option>JR Nível I</option>
+          <option>JR Nível II</option>
+          <option>JR Nível III</option>
+
+          <option>Pleno Nível I</option>
+          <option>Pleno Nível II</option>
+          <option>Pleno Nível III</option>
+
+          <option>Sênior Nível I</option>
+          <option>Sênior Nível II</option>
+          <option>Sênior Nível III</option>
+        </select>
+      </div>
+
+      <fieldset class="grupo">
+        <div id="checkbox">
+          <label><Strong>Selecione as tecnologias que você tem habilidade<strong></label
+          ><br /><br />
+
+          <input
+            type="checkbox"
+            id="tecnologia 1"
+            name="tecnologia 1"
+            value="HTML"
+          />
+          <label for="tecnologia 1"> HTML</label>
+
+          <input
+            type="checkbox"
+            id="tecnologia 2"
+            name="tecnologia 2"
+            value="CSS"
+          />
+          <label for="tecnologia 2"> CSS</label>
+
+          <input
+            type="checkbox"
+            id="tecnologia 3"
+            name="tecnologia 3"
+            value="JavaScript"
+          />
+          <label for="tecnologia 3"> JavaScript</label>
+
+          <input
+            type="checkbox"
+            id="tecnologia 4"
+            name="tecnologia 4"
+            value="Java"
+          />
+          <label for="tecnologia 4"> Java</label>
+
+          <input
+            type="checkbox"
+            id="tecnologia 5"
+            name="tecnologia 5"
+            value="PHP"
+          />
+          <label for="tecnologia 5"> PHP</label>
+
+          <input
+            type="checkbox"
+            id="tecnologia 6"
+            name="tecnologia 6"
+            value="C#"
+          />
+          <label for="tecnologia 6"> C#</label>
+
+          <input
+            type="checkbox"
+            id="tecnologia 7"
+            name="tecnologia 7"
+            value="Outro"
+          />
+          <label for="tecnologia 7"> outro</label>
+          <input type="text" name="outro" id="outro" >
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br/>
+        <label>Conte um pouco sobre sua experiência</label>
+        <textarea row="10" style="width: 26em" id="experiência"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
